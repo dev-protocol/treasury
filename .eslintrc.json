@@ -20,7 +20,10 @@
 		"@typescript-eslint/prefer-readonly-parameter-types": "warn",
 		"@typescript-eslint/naming-convention": [
 			"error",
-			{ "selector": "variableLike", "format": ["camelCase", "PascalCase"] }
+			{
+				"selector": "variableLike",
+				"format": ["camelCase", "PascalCase"]
+			}
 		]
 	},
 	"overrides": [
