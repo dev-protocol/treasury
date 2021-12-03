@@ -3,8 +3,8 @@
 	"automerge": true,
 	"packageRules": [
 		{
-		  "packageNames": "@openzeppelin/contracts",
-		  "allowedVersions": "<=4.4.0"
+			"packageNames": "@openzeppelin/contracts",
+			"allowedVersions": "<=4.4.0"
 		},
 		{
 			"packageNames": "@openzeppelin/contracts-upgradeable",
