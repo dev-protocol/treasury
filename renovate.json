@@ -4,7 +4,7 @@
 	"packageRules": [
 		{
 			"packageNames": "@openzeppelin/contracts",
-			"allowedVersions": "<=4.4.0"
+			"allowedVersions": "<=4.3.2"
 		},
 		{
 			"packageNames": "@openzeppelin/contracts-upgradeable",
