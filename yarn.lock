@@ -35,6 +35,29 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
+"@devprotocol/protocol-v2@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@devprotocol/protocol-v2/-/protocol-v2-0.5.0.tgz#5174ebb31fa13ffcd22d2fe39ebada56b3c4d858"
+  integrity sha512-HMdrQGGxhQjuht89V9pFFN0pcUazZG+VMUzQEO/IhyF39ojOKd4ij1yNQBGhua+Q4q86SMFKQ5+ansSMdBCaNA==
+  dependencies:
+    "@devprotocol/util-contracts" "3.3.0"
+    "@openzeppelin/contracts" "4.3.2"
+    "@openzeppelin/contracts-upgradeable" "4.3.2"
+
+"@devprotocol/protocol@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@devprotocol/protocol/-/protocol-3.4.0.tgz#df746e7b82d1aed18d51b146fea62b50e1a6bbc8"
+  integrity sha512-LRQrpT078PavgqxD584QWpALCr9BgX1abttGTOe0gUZsRnT5JSruxp6Bs4k5yfaAD3XRdkf/SR2+YLPwah0QYQ==
+  dependencies:
+    "@openzeppelin/contracts" "2.5.1"
+
+"@devprotocol/util-contracts@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@devprotocol/util-contracts/-/util-contracts-3.3.0.tgz#56978e832f12b1796d937b20e57be307f2fcbc07"
+  integrity sha512-5KgaYUcp7tbPIjSzoxE/40pMYqfFdqHsMraKy+ATDWVEy1D7gfdQEvOyx2nMwE/a5pjSO+UDgZP1hclEbnyTRQ==
+  dependencies:
+    "@openzeppelin/contracts" "4.3.0"
+
 "@ensdomains/ens@^0.4.4":
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/@ensdomains/ens/-/ens-0.4.5.tgz#e0aebc005afdc066447c6e22feb4eda89a5edbfc"
@@ -949,10 +972,25 @@
     "@types/sinon-chai" "^3.2.3"
     "@types/web3" "1.0.19"
 
-"@openzeppelin/contracts-upgradeable@^4.3.2":
+"@openzeppelin/contracts-upgradeable@4.3.2", "@openzeppelin/contracts-upgradeable@^4.3.2":
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts-upgradeable/-/contracts-upgradeable-4.3.2.tgz#92df481362e366c388fc02133cf793029c744cea"
   integrity sha512-i/pOaOtcqDk4UqsrOv735uYyTbn6dvfiuVu5hstsgV6c4ZKUtu88/31zT2BzkCg+3JfcwOfgg2TtRKVKKZIGkQ==
+
+"@openzeppelin/contracts@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-2.5.1.tgz#c76e3fc57aa224da3718ec351812a4251289db31"
+  integrity sha512-qIy6tLx8rtybEsIOAlrM4J/85s2q2nPkDqj/Rx46VakBZ0LwtFhXIVub96LXHczQX0vaqmAueDqNPXtbSXSaYQ==
+
+"@openzeppelin/contracts@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.3.0.tgz#345236d4ec73ef381ab4907c6ef66fd55e5dedad"
+  integrity sha512-+uBDl/TrmR0Kch6mq3tuxMex/fK7huR6+fQMae+zJk1K5T+dp0pFl12Hbc+1L6oYMXoyDSBJ8zqhRIntrREDFA==
+
+"@openzeppelin/contracts@4.3.2":
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.3.2.tgz#ff80affd6d352dbe1bbc5b4e1833c41afd6283b6"
+  integrity sha512-AybF1cesONZStg5kWf6ao9OlqTZuPqddvprc0ky7lrUVOjXeKpmQ2Y9FK+6ygxasb+4aic4O5pneFBfwVsRRRg==
 
 "@openzeppelin/contracts@4.4.0":
   version "4.4.0"
@@ -1139,10 +1177,10 @@
     lodash "^4.17.15"
     ts-essentials "^7.0.1"
 
-"@typechain/hardhat@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-2.3.0.tgz#dc7f29281637b38b77c7c046ae82700703395d0f"
-  integrity sha512-zERrtNol86L4DX60ktnXxP7Cq8rSZHPaQvsChyiQQVuvVs2FTLm24Yi+MYnfsIdbUBIXZG7SxDWhtCF5I0tJNQ==
+"@typechain/hardhat@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-3.0.0.tgz#a94396855506d42b98d6e7c09f87ca14180d6c64"
+  integrity sha512-FpnIIXkDXm54XCHI/Z2iOet7h1MrFSvZfuljX9Uzc6FEjEfb01Tuzu8ywe2iquD3g5JXqovgdv+M54L/2Z6jkg==
   dependencies:
     fs-extra "^9.1.0"
 
@@ -3603,12 +3641,10 @@ eslint-config-prettier@8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-xo-typescript@0.44.0:
-  version "0.44.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo-typescript/-/eslint-config-xo-typescript-0.44.0.tgz#972285f401ea6b26c5802e177431de8b15851b0f"
-  integrity sha512-/mRj2KHHwnl3ZyM8vn68NSfRoEunkSYagWERGmNnU5UOLo4AY9jjBNZW+/sDOaPYuc5xzYmLxYspDCVCXKLGNQ==
-  dependencies:
-    typescript ">=4.3"
+eslint-config-xo-typescript@0.47.1:
+  version "0.47.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo-typescript/-/eslint-config-xo-typescript-0.47.1.tgz#87b5865d8a3428fa26cc8dc3146ef4f712dfed46"
+  integrity sha512-BkbzIltZCWp8QLekKJKG8zJ/ZGezD8Z9FaJ+hJ5PrAVUGkIPmxXLLEHCKS3ax7oOqZLYQiG+jyKfQDIEdTQgbg==
 
 eslint-config-xo@0.39.0:
   version "0.39.0"
@@ -9039,7 +9075,7 @@ typescript@4.5.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
   integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
-typescript@>=4.3, typescript@^4.3.4:
+typescript@^4.3.4:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
   integrity sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==

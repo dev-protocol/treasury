@@ -64,6 +64,7 @@ typings/
 # output of typechain
 build
 types
+typechain-types
 
 # output of tsc
 *.js
