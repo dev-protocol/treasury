@@ -1,10 +1,16 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { ethers } from 'hardhat'
 
 async function main() {
-	//! please check!!!!!!!!!
-	const adminAddress = ''
-	const registryAddress = ''
-	//! !!!!!!!!!!!!!!!!!!!!!
+	const [deployer] = await ethers.getSigners();
+	console.log("Deploying contracts with the account:", deployer.address);
+	console.log("Account balance:", (await deployer.getBalance()).toString());
+	const adminAddress = process.env.ADMIN!
+	const registryAddress = process.env.REGISTRY!
+
+	console.log(`admin address:${adminAddress}`)
+	console.log(`registry address:${registryAddress}`)
 
 	// GitHubMarket
 	const treasuryV2Factory = await ethers.getContractFactory('TreasuryV2')
@@ -36,6 +42,6 @@ main()
 	})
 
 // Memo
-// set adminAddress and registryAddress and update .env file
+// update .env file
 // and execute this command
 // npx hardhat run --network arbitrumRinkeby scripts/deploy-treasury.ts
