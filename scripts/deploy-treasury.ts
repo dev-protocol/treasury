@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
+
 import { ethers } from 'hardhat'
 
 async function main() {
-	const [deployer] = await ethers.getSigners();
-	console.log("Deploying contracts with the account:", deployer.address);
-	console.log("Account balance:", (await deployer.getBalance()).toString());
+	const [deployer] = await ethers.getSigners()
+	console.log('Deploying contracts with the account:', deployer.address)
+	console.log('Account balance:', (await deployer.getBalance()).toString())
 	const adminAddress = process.env.ADMIN!
 	const registryAddress = process.env.REGISTRY!
 

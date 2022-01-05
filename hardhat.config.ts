@@ -33,7 +33,7 @@ const config: HardhatUserConfig = {
 				mnemonic,
 			},
 			gas: 2100000,
-			gasPrice: 8000000000
+			gasPrice: 8000000000,
 		},
 	},
 }
