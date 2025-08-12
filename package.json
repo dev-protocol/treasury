@@ -47,7 +47,7 @@
 		"solhint": "3.3.8",
 		"ts-node": "10.9.2",
 		"typechain": "8.3.2",
-		"typescript": "5.0.4"
+		"typescript": "5.9.2"
 	},
 	"dependencies": {
 		"@devprotocol/protocol": "3.4.0",
