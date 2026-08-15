@@ -1,8 +1,14 @@
 {
-	"name": "template-repos-ts-sol",
+	"name": "@devprotocol/treasury",
 	"version": "1.0.0",
-	"description": "Template repository for using TypeScript and Solidity",
+	"description": "Treasury contracts for the Dev Protocol ecosystem",
 	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dev-protocol/treasury.git"
+	},
+	"author": "Dev Protocol",
+	"license": "MPL-2.0",
 	"scripts": {
 		"test": "hardhat test",
 		"pretest": "yarn generate",
@@ -17,8 +23,6 @@
 		"clean": "del 'artifacts'",
 		"prepare": "husky install"
 	},
-	"author": "",
-	"license": "MPL-2.0",
 	"devDependencies": {
 		"@nomiclabs/hardhat-ethers": "2.1.1",
 		"@nomiclabs/hardhat-waffle": "2.0.6",
